@@ -33,6 +33,11 @@ namespace SsitemaSeguridad
         public abstract void VerificarNivelAcceso();
         public abstract void RegistrarIntento();
         public abstract void NotificarResultado();
+
+        public virtual void NotificarResultado(string mensaje = "Acceso concedido")
+        {
+            Console.WriteLine(mensaje);
+        }
     }
 }
     
